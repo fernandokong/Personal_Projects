@@ -1,5 +1,6 @@
 import tkinter as tk
 from tkinter import ttk
+import math
 
 class SudokuSolver:
 
@@ -85,7 +86,7 @@ class SudokuSolver:
 		
 		for num in range (1,10): #try putting in 1-9
 			if self.check_conflicts(i,j, num) == 0: #if assignment is valid
-				self.array[i][j] = num #try assignment	
+				self.array[i][j] = num #try assignment
 				self.blip_canvas()
 				
 				if (self.solve_sudoku() == 1):
@@ -113,7 +114,7 @@ class SudokuSolver:
 			if self.array[col][j] == num:
 				return 1
 		
-		sq_col, sq_row = (col/3)*3, (row/3)*3
+		sq_col, sq_row = (col//3)*3, (row//3)*3
 		
 		for i in range (sq_col, sq_col+3): #check if duplicates in square
 			for j in range (sq_row, sq_row+3):

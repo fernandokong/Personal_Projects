@@ -1,3 +1,9 @@
+#Fernando Kong
+#Python 2.7 Compatible
+#
+#Queens 8 Program with Visual Display
+#Utilizes backtracking to recursively bruteforce a solution to placing 8 queens on a single chessboard with no conflicts
+
 import tkinter as tk
 from tkinter import ttk
 from PIL import ImageTk, Image

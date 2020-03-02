@@ -1,3 +1,16 @@
+#Fernando Kong
+#Python 2.7 Compatible
+#
+#Sudoku Solver Program with Visual Display
+#Utilizes backtracking to recursively bruteforce a solution for a preset sudoku puzzle
+#
+#Backtracking Structure
+#1)Base case 1, returns true when we've reached the end result
+#2)Try a new valid assignment
+#3)Recursively travel along the branch of the valid assignment, return true if it reaches base case 1
+#4)If step 3 returns false, remove assignment and go to step 2
+#5)If no more assignments left, base case 2, return false. This branch will not work 
+
 import tkinter as tk
 from tkinter import ttk
 import math

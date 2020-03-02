@@ -1,3 +1,10 @@
+#Fernando Kong
+#Python 2.7 Compatible
+#
+#Sort Visualizer
+#Includes Bubble sort, Insertion sort, Selection sort, Merge sort, Quick sort, Heap sort
+#Displays real time sorting of sort algorithms
+
 import tkinter as tk
 from tkinter import ttk
 import random

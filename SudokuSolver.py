@@ -38,13 +38,12 @@ class SudokuSolver:
 		
 		self.blip_canvas()
 
-
 	def draw_canvas(self): #draws the canvas
 		h = self.window_height-20
 		w = self.window_width
 		self.canvas = tk.Canvas(self.root, width=w, height=h)
 		self.canvas.grid(row=1)
-
+		
 		#draw grid
 		self.grid_lines = []
 		for i in range(0,w,50):
